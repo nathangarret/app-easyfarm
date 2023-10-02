@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_DadosApelido">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:title="@string/toolbar"
+        app:titleTextColor="@color/white" />
+
+    <View
+        android:id="@+id/linha"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="@string/editar_apelido"
+        android:textColor="@color/verde"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/voltar_dadoscli"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"></ImageView>
+
+    <EditText
+        android:id="@+id/apelido_editar"
+        style="@style/Edit_text"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linha"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Kaene">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_editarapelido"
+        android:textColor="@color/white"
+        style="@style/button_dados"
+        android:layout_marginTop="35dp"
+        android:text="@string/salvar"
+        android:fontFamily="@font/mulishdois"
+        android:textStyle="bold"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apelido_editar"
+        android:layout_centerHorizontal="true">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_toolbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

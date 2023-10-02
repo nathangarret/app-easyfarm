@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_PrincipalADM">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@color/verde"
+            android:title="@string/toolbar"
+            app:titleTextColor="@color/white" />
+
+        <ImageView
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo_branca" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/mulishdois"
+            android:text="asyFarm"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/search_myaccount"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:layout_marginStart="355dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/user"
+            android:background="@color/verde"
+            android:src="@drawable/ic_baseline_account_circle_24_white" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_myaccount"
+            android:layout_marginTop="25dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1125dp">
+
+                <ViewFlipper
+                    android:id="@+id/v_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:autoStart="true"
+                    android:flipInterval="3500">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="25dp"
+                        android:src="@drawable/carrousel_um" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="25dp"
+                        android:src="@drawable/carrousel_dois" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="25dp"
+                        android:src="@drawable/carrousel_tres" />
+                </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/txt_melhorescupons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mulishdois"
+                    android:text="@string/melhores_cupons"
+                    android:padding="15dp"
+                    android:layout_below="@+id/v_flipper">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/img_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/ver_todos"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/v_flipper"/>
+
+                <View
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/img_right"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/verde">
+                </View>
+
+                <TextView
+                    android:id="@+id/desconto_dez"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/mulishdois"
+                    android:padding="15dp"
+                    android:text="10% de Desconto"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/txt_melhorescupons"/>
+
+                <ImageView
+                    android:background="@color/verde"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:layout_height="75px"
+                    android:layout_width="75px"
+                    android:layout_marginStart="365dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/txt_melhorescupons"/>
+
+                <TextView
+                    android:id="@+id/desconto_quinze"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/mulishdois"
+                    android:padding="15dp"
+                    android:text="15% de Desconto"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/desconto_dez"/>
+
+                <ImageView
+                    android:background="@color/verde"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:layout_height="75px"
+                    android:layout_width="75px"
+                    android:layout_marginStart="365dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/desconto_dez"/>
+
+                <TextView
+                    android:id="@+id/desconto_vinte"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/mulishdois"
+                    android:padding="15dp"
+                    android:text="20% de Desconto"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/desconto_quinze"/>
+
+                <ImageView
+                    android:background="@color/verde"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:layout_height="75px"
+                    android:layout_width="75px"
+                    android:layout_marginStart="365dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/desconto_quinze"/>
+
+                <TextView
+                    android:id="@+id/desconto_vinte5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/mulishdois"
+                    android:padding="20dp"
+                    android:text="25% de Desconto"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/desconto_vinte"/>
+
+                <ImageView
+                    android:background="@color/verde"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:layout_height="75px"
+                    android:layout_width="75px"
+                    android:layout_marginStart="365dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/desconto_vinte"/>
+
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/verde"
+                    android:layout_below="@id/desconto_vinte5">
+                </View>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:padding="15dp"
+                    android:rowCount="3">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="25dp"
+                        android:layout_height="125dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="635dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="25dp"
+                                android:padding="5dp"
+                                android:src="@drawable/logo_colorida" />
+
+                            <RelativeLayout
+                                android:id="@+id/trocar_cupom1"
+                                android:layout_width="185dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@color/verde">
+
+                                <TextView
+                                    android:id="@+id/kbm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/mulishdois"
+                                    android:padding="5dp"
+                                    android:text="Alterar!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="25dp"
+                        android:layout_height="125dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="635dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/amazon_card"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="25dp"
+                                android:padding="5dp"
+                                android:src="@drawable/logo_colorida" />
+
+                            <RelativeLayout
+                                android:id="@+id/trocar_cupom2"
+                                android:layout_width="185dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@color/verde">
+
+                                <TextView
+                                    android:id="@+id/amazon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/mulishdois"
+                                    android:padding="5dp"
+                                    android:text="Alterar!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="25dp"
+                        android:layout_height="125dp"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="25dp"
+                                android:padding="5dp"
+                                android:src="@drawable/logo_colorida" />
+
+                            <RelativeLayout
+                                android:id="@+id/trocar_cupom3"
+                                android:layout_width="185dp"
+                                android:layout_height="45dp"
+                                android:background="@color/verde">
+
+                                <TextView
+                                    android:id="@+id/adidas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/mulishdois"
+                                    android:padding="5dp"
+                                    android:text="Alterar!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="25dp"
+                        android:layout_height="125dp"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="25dp"
+                                android:padding="5dp"
+                                android:src="@drawable/logo_colorida" />
+
+                            <RelativeLayout
+                                android:id="@+id/trocar_cupom4"
+                                android:layout_width="185dp"
+                                android:layout_height="45dp"
+                                android:background="@color/verde">
+
+                                <TextView
+                                    android:id="@+id/ubereats"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/mulishdois"
+                                    android:padding="5dp"
+                                    android:text="Alterar!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="25dp"
+                        android:layout_height="125dp"
+                        android:layout_row="2"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="0"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:padding="25dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="25dp"
+                                android:padding="5dp"
+                                android:src="@drawable/logo_colorida" />
+
+                            <RelativeLayout
+                                android:id="@+id/trocar_cupom5"
+                                android:layout_width="185dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@color/verde">
+
+                                <TextView
+                                    android:id="@+id/nike"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/mulishdois"
+                                    android:padding="5dp"
+                                    android:text="Alterar!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_row="2"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="0"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:padding="25dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="25dp"
+                                android:padding="5dp"
+                                android:src="@drawable/logo_colorida" />
+
+                            <RelativeLayout
+                                android:id="@+id/trocar_cupom6"
+                                android:layout_width="185dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@color/verde">
+
+                                <TextView
+                                    android:id="@+id/trivago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/mulishdois"
+                                    android:padding="5dp"
+                                    android:text="Alterar!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nav2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/menu_toolbar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</RelativeLayout>

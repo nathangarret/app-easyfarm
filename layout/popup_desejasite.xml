@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    style="@style/Edit_text">
+
+    <TextView
+        android:id="@+id/djs_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mulishdois"
+        android:text="Deseja ir para o site ?"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img_site"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/djs_site"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/checkedx" />
+
+    <ImageView
+        android:id="@+id/img_ficar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/cancelar"
+        android:layout_below="@+id/djs_site"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp" />
+</RelativeLayout>

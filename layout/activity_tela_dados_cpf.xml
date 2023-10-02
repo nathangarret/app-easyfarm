@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:title="@string/toolbar" />
+
+    <View
+        android:id="@+id/linha"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="CPF"
+        android:textColor="@color/verde"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/voltar_dadoscli"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/cpf_editar"
+        style="@style/Edit_text"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:hint="111.222.333-44"
+        android:textColorHint="@color/black"
+        app:mask="___.___.___-__"
+        app:maskCharacter="_"
+        app:maskStyle="completable"/>
+
+</RelativeLayout>

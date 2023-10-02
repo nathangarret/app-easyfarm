@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_EsqueceuSenha"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="Esqueceu a Senha?"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="Lhe enviaremos um e-mail com mais informações sobre redefinir sua senha."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/edit_emailforgot"
+        style="@style/Edit_text"
+        android:layout_width="305dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="315dp"
+        android:drawableRight="@drawable/emailzx"
+        android:ems="10"
+        android:fontFamily="@font/mulishdois"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_enviaremail"
+        style="@style/button_dados"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="425dp"
+        android:width="155dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="Enviar Email"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/backforget_login"
+        android:layout_width="125px"
+        android:layout_height="125px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="525dp"
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="325dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        app:cardElevation="55dp"
+        app:cardCornerRadius="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="@color/verde">
+
+        <TextView
+            android:id="@+id/card_codcup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/mulishdois"
+            android:text="COD CUPOM"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/card_nomecup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOME CUPOM"
+        android:textSize="20sp"
+        android:fontFamily="@font/mulishdois"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/card_desccup"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="85dp"
+            android:fontFamily="@font/mulishdois"
+            android:text="DESC CUPOM"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/card_validadecup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/mulishdois"
+            android:text="VALIDADE CUPOM"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="175dp"/>
+
+    <TextView
+        android:id="@+id/card_valorcup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALOR CUPOM"
+        android:textSize="20sp"
+        android:fontFamily="@font/mulishdois"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="225dp"
+        android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/card_imgcup"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="286dp"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/logo_branca" />
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

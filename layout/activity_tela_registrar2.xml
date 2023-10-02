@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_Registrar2">
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/txt_cads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="Cadastra-se"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email_cadastro"
+        style="@style/Edit_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:drawableEnd="@drawable/emailzx"
+        android:hint="Email"
+        android:maxLength="50"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:drawableEnd="@drawable/lock"
+        android:id="@+id/senha_cadastro"
+        style="@style/Edit_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:maxLength="40"
+        android:textColorHint="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="305dp"
+        android:layout_height="59dp"
+        style="@style/button_dados"
+        android:fontFamily="@font/mulishdois"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        android:layout_below="@+id/senha_cadastro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+    <ImageView
+        android:id="@+id/back_register1"
+        android:layout_width="125px"
+        android:layout_height="125px"
+        android:layout_below="@+id/btn_cadastrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+</RelativeLayout>

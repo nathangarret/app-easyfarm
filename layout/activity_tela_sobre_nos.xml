@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_SobreNos">
+
+    <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    style="@style/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/verde"
+    android:title="@string/toolbar"
+    app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="925dp">
+    <TextView
+        android:id="@+id/titulo_meajuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre Nós"
+        android:fontFamily="@font/mulishdois"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/back_nos"
+        android:layout_width="115px"
+        android:layout_height="115px"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+        <ImageView
+            android:id="@+id/logo_sobrenos"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="125dp"
+            android:src="@drawable/logo_colorida"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asy Farm"
+                android:padding="5dp"
+                android:fontFamily="@font/mulishdois"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="125dp"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt_sobrenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="  A Easy Farm é um projeto nacional de desenvolvimento tecnológico na área rural, trazendo facilidade para os pequenos produtores ao fazer suas vendas de forma simples e confiável, e para os consumidores de forma rápida e íntegra. \n
+
+A Easy Farm está vinculada com todos os produtos da melhor qualidade, que tenha uma experiência de compra online conveniente e perfeita para seu cotidiano a fim de encontrar produtos a qualquer hora e lugar.\n
+
+ Com um forte suporte de pagamento e entrega, a Easy Farm quer que você sinta mais facilidade e segurança na hora de comprar na internet.\n
+
+ Sendo possível efetuar compras com promoções diárias no aplicativo sendo praticáveis encontrar tudo o que quiser no  setor agro com os melhores preços."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/logo_sobrenos"
+        android:fontFamily="@font/mulishdois"
+        android:textStyle="bold"
+        android:padding="25dp"/>
+
+    <TextView
+        android:layout_below="@id/txt_sobrenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@EasyFarm"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mulishdois"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_toolbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

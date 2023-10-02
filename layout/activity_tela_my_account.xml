@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Tela_MinhaConta">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/verde"
+        android:title="@string/toolbar"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minha_conta"
+        android:fontFamily="@font/mulishdois"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/information_cli"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:padding="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/logo_myaccount"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="75dp"
+            android:src="@drawable/logo_colorida" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mulishdois"
+            android:text="asyFarm"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/linha"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/information_cli"
+        android:layout_marginTop="5dp"
+        android:background="@color/verde">
+    </View>
+
+    <TextView
+        android:id="@+id/me_ajuda"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linha"
+        android:fontFamily="@font/mulishdois"
+        android:padding="15dp"
+        android:text="@string/me_ajuda"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:layout_height="75px"
+        android:layout_width="75px"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linha" />
+
+    <View
+        android:id="@+id/linha1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/me_ajuda"
+        android:layout_marginTop="5dp"
+        android:background="@color/verde">
+    </View>
+
+    <TextView
+        android:id="@+id/dados_cadastrais"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linha1"
+        android:fontFamily="@font/mulishdois"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:text="@string/dados_cadastrais"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:id="@+id/img_dadoscads"
+        android:layout_height="75px"
+        android:layout_width="75px"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linha1"/>
+
+    <View
+        android:id="@+id/linha2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dados_cadastrais"
+        android:layout_marginTop="5dp"
+        android:background="@color/verde">
+    </View>
+
+    <TextView
+        android:id="@+id/dados_cuponsutil"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linha2"
+        android:fontFamily="@font/mulishdois"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:text="@string/cupons_utilizados"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:id="@+id/img_dadoscuputil"
+        android:layout_height="75px"
+        android:layout_width="75px"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linha2"/>
+
+    <View
+        android:id="@+id/linha3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dados_cuponsutil"
+        android:layout_marginTop="5dp"
+        android:background="@color/verde">
+    </View>
+
+    <TextView
+        android:id="@+id/sobrenos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linha3"
+        android:fontFamily="@font/mulishdois"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:text="Sobre Nós"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:layout_height="75px"
+        android:layout_width="75px"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linha3"/>
+
+    <View
+        android:id="@+id/linha4"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sobrenos"
+        android:layout_marginTop="5dp"
+        android:background="@color/verde">
+    </View>
+
+    <TextView
+        android:id="@+id/sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linha4"
+        android:fontFamily="@font/mulishdois"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sair"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/nav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_toolbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

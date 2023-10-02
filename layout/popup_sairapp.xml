@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/titulo_encerrar"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="Realmente deseja sair do aplicativo?"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/subtitulo_encerrar"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo_encerrar"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/mulishdois"
+        android:text="Ao selecionar sim você irá voltar para a tela de login?"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/btn_sair"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/subtitulo_encerrar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/verde"
+        android:src="@drawable/ic_baseline_check_24_white" />
+
+    <ImageView
+        android:id="@+id/btn_sairficar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/subtitulo_encerrar"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_baseline_close_24_white"
+        android:background="@color/verde" />
+</RelativeLayout>
