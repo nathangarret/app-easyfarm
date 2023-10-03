@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela_Registrar">
+
+    <TextView
+        android:id="@+id/txt_cads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastra-se"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/mulishdois"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/cpf_cadastro"
+        style="@style/Edit_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/txt_cads"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="CPF"
+        android:inputType="number"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:layout_below="@+id/txt_cads"
+        android:id="@+id/first_cadastro"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        style="@style/Edit_text"
+        android:hint="@string/primeiro_nome"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:layout_below="@+id/txt_cads"
+        android:id="@+id/second_cadastro"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        style="@style/Edit_text"
+        android:hint="Segundo Nome"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:layout_below="@+id/txt_cads"
+        android:id="@+id/fone_cadastro"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        style="@style/Edit_text"
+        android:hint="Fone"
+        android:inputType="number"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/nasc_cadastro"
+        style="@style/Edit_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/txt_cads"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="425dp"
+        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+        android:hint="Nasc"
+        android:inputType="datetime"
+        android:textColorHint="@color/black"/>
+
+            <ImageView
+                android:id="@+id/cads1"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:layout_below="@+id/nasc_cadastro"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/verde"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+    <TextView
+        android:id="@+id/txt_back"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nasc_cadastro"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/mulishdois"
+        android:text="Já possui o login? Logar-se"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</RelativeLayout>
